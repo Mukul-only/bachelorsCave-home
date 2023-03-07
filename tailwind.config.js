@@ -12,6 +12,7 @@ module.exports = {
       colors: {
         darkestBlue: "#03045e",
         lightestBlue: "#caf0f8",
+        matteBlue : '#023047'
       },
       fontFamily: {
         sans: ['Josefin Sans', 'sans-serif'],
