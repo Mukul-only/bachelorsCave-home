@@ -75,7 +75,10 @@
 }
 
 .open .hamburger-top{
-    transform:rotate(45deg) translateY(6px) translateX(6px);
+
+    transform:rotate(45deg) translateY(12px) translateX(12px);
+    
+    
     
 }
 .open .hamburger-middle{
@@ -83,6 +86,8 @@
     
 }
 .open .hamburger-bottom{
-    transform:rotate(-45deg) translateY(6px) translateX(-6px);
+    
+    transform:rotate(-45deg) translateY(12px) translateX(-12px);
+    
     
 }
