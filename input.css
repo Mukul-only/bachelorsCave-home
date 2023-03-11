@@ -81,3 +81,29 @@
 .open .hamburger-bottom {
   transform: rotate(-45deg) translateY(6px) translateX(-6px);
 }
+
+.brand {
+  color: transparent;
+  -webkit-text-stroke: 0.5px #03045e;
+  background-image: linear-gradient(
+    45deg,
+    transparent 20%,
+    #03045e 20%,
+    #03045e 70%,
+    transparent 70%
+  );
+
+  background-clip: text;
+  background-size: 200%;
+  background-repeat: no-repeat;
+  animation: bgc 2500ms ease-in-out infinite alternate;
+}
+
+@keyframes bgc {
+  0% {
+    background-position: -350px 0px;
+  }
+  100% {
+    background-position: 150px 0px;
+  }
+}
