@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 #hero {
-  background-image: url("../assets/bg-header-mobile.png");
+  background-image: url("../assets/hero-mobile.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -12,7 +12,7 @@
   @apply max-w-6xl mx-auto md:px-8 px-5;
 }
 .selected {
-  @apply bg-darkestBlue text-white  rounded-lg shadow-lg shadow-lightestBlue;
+  @apply bg-darkestBlue text-white  rounded-lg shadow-lg;
 }
 .img {
   position: absolute;
@@ -31,14 +31,14 @@
 
 @media (min-width: 768px) {
   #hero {
-    background-image: url("../assets/bg-header-desktop.png");
-    background-size: contain;
+    background-image: url("../assets/hero-desktop.png");
+
     background-position: top;
   }
 }
 
 .item-circle {
-  @apply w-24 h-24 rounded-full bg-white flex justify-center items-center shadow-lg shadow-lightestBlue;
+  @apply w-20 h-20 md:w-24 md:h-24 rounded-full bg-white flex justify-center items-center shadow-lg shadow-lightestBlue;
 }
 
 /* hamburger menu */
@@ -57,7 +57,7 @@
   height: 2px;
   top: 0;
   left: 0;
-  background: black;
+  background: white;
   transform: rotate(0);
   transition: all 500ms;
 }
@@ -84,12 +84,12 @@
 
 .brand {
   color: transparent;
-  -webkit-text-stroke: 0.5px #03045e;
+  -webkit-text-stroke: 0.5px white;
   background-image: linear-gradient(
     45deg,
     transparent 20%,
-    #03045e 20%,
-    #03045e 70%,
+    white 20%,
+    white 70%,
     transparent 70%
   );
 
