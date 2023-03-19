@@ -12,12 +12,12 @@ module.exports = {
       colors: {
         darkestBlue: "#03045e",
         lightestBlue: "#caf0f8",
-        matteBlue : '#023047'
+        matteBlue: "#023047",
       },
       fontFamily: {
-        sans: ['Josefin Sans', 'sans-serif'],
-        alata: ['Alata'],
-        tiltWrap:['Tilt Warp', 'cursive']
+        sans: ["Poppins", "sans-serif"],
+        alata: ["Alata"],
+        tiltWrap: ["Tilt Warp", "cursive"],
       },
     },
   },

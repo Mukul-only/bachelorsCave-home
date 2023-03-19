@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 #hero {
-  background-image: url("../assets/hero-mobile.png");
+  background-image: url("../assets/hero-mobile.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -33,7 +33,10 @@
 }
 
 .img-label {
-  @apply absolute bottom-0 left-0  px-4 py-2 font-thin  group-hover:scale-110 duration-500;
+  @apply absolute  bottom-0 left-0 px-4 py-2   group-hover:scale-110 duration-500;
+}
+.moblie-label {
+  @apply bottom-1/2 left-1/2 -translate-x-1/2  translate-y-1/2 bg-darkestBlue rounded-xl;
 }
 .back::after {
   content: "";
@@ -49,7 +52,7 @@
 
 @media (min-width: 768px) {
   #hero {
-    background-image: url("../assets/hero-desktop.png");
+    background-image: url("../assets/hero-desktop.jpg");
 
     background-position: top;
   }
@@ -91,7 +94,7 @@
   height: 2px;
   top: 0;
   left: 0;
-  background: white;
+  background: rgb(0, 0, 0);
   transform: rotate(0);
   transition: all 500ms;
 }
@@ -118,12 +121,12 @@
 
 .brand {
   color: transparent;
-  -webkit-text-stroke: 0.5px white;
+  -webkit-text-stroke: 0.5px #03045e;
   background-image: linear-gradient(
     45deg,
     transparent 20%,
-    white 20%,
-    white 70%,
+    #03045e 20%,
+    #03045e 70%,
     transparent 70%
   );
 
