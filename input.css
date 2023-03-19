@@ -2,6 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+input,
+textarea,
+button,
+select,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
 #hero {
   background-image: url("../assets/hero-mobile.jpg");
   background-repeat: no-repeat;
@@ -56,7 +64,7 @@
 }
 
 .item-circle {
-  @apply w-16 h-16 md:w-24 md:h-24 rounded-full shadow-md  bg-white flex justify-center items-center;
+  @apply w-16 h-16 md:w-20 md:h-20 rounded-full shadow-md  bg-white flex justify-center items-center;
 }
 
 /* hamburger menu */
@@ -107,14 +115,22 @@
     45deg,
     transparent 20%,
     #03045e 20%,
+    #03045e 40%,
+    transparent 40%,
+    transparent 50%,
+    #03045e 50%,
     #03045e 70%,
-    transparent 70%
+    transparent 70%,
+    transparent 80%,
+    #03045e 80%,
+    #03045e 88%,
+    transparent 88%
   );
 
   background-clip: text;
   background-size: 200%;
   background-repeat: no-repeat;
-  animation: bgc 2500ms ease-in-out infinite alternate;
+  animation: bgc 4500ms ease-in-out infinite alternate;
 }
 
 @keyframes bgc {
@@ -122,6 +138,6 @@
     background-position: -350px 0px;
   }
   100% {
-    background-position: 150px 0px;
+    background-position: 280px 0px;
   }
 }

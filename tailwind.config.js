@@ -19,6 +19,9 @@ module.exports = {
         alata: ["Alata"],
         tiltWrap: ["Tilt Warp", "cursive"],
       },
+      transitionProperty: {
+        width: "width",
+      },
     },
   },
   plugins: [],

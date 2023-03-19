@@ -3,6 +3,13 @@ const radio = document.querySelectorAll(".rd");
 const menuBtn = document.querySelector("#menu-btn");
 const menu = document.querySelector("#menu");
 
+let typed = new Typed(".auto-typed", {
+  strings: ["stay.", "live."],
+  typeSpeed: 150,
+  backSpeed: 150,
+  loop: true,
+});
+
 menuBtn.addEventListener("click", () => {
   menuBtn.classList.toggle("open");
   menu.classList.toggle("flex");

@@ -18,7 +18,7 @@
 
     <link rel="stylesheet" href="css/style.css">
 
-    <script defer src="js/script.js"></script>
+    
     <script defer src="https://use.fortawesome.com/349cfdf6.js"></script>
     <title>BachelorsCave</title>
 </head>
@@ -55,22 +55,23 @@
                 </div>                
 
                 <!-- menu -->
-                <div class="hidden md:flex md:space-x-4 lg:space-x-8 items-center md:text-sm lg:text-md font-alata tracking-wide">
+                <div class="hidden md:flex md:space-x-4 lg:space-x-8 items-center md:text-sm lg:text-md  tracking-wide">
                     <!-- menu items -->
                     <div class="group">
                         <a href="#" class="">Home</a>
-                        <div class="border-t-2 border-black mt-[1px] opacity-0 group-hover:opacity-100  mx-2">                                
+                        <div class="border-t-2 border-black mt-[1px] scale-0 
+                         group-hover:scale-100  mx-1 duration-200">                                
                         </div>
                     </div>
                     
                     <div class="group">
                         <a href="#" class="">List property</a>
-                        <div class="border-t-2 border-black mt-[1px] opacity-0 group-hover:opacity-100  mx-2">                                
+                        <div class="border-t-2 border-black mt-[1px] scale-0 group-hover:scale-100  mx-1 duration-200">                                
                         </div>
                     </div>
                     <div class="group">
                         <a href="#" class="">About</a>
-                        <div class="border-t-2 border-black mt-[1px] opacity-0 group-hover:opacity-100  mx-2">                                
+                        <div class="border-t-2 border-black mt-[1px] scale-0 group-hover:scale-100  mx-1 duration-200">                                
                         </div>
                     </div>
                     <div class="flex space-x-2 overflow-hidden md:text-[0.8rem] lg:text-sm">
@@ -85,7 +86,8 @@
             </nav>
 
             <div class="mt-44 mb-16">
-                <h1  class="  w-80 mx-auto md:w-[500px] text-3xl md:text-5xl text-center md:text-left font-semibold md:ml-0">Discover a place you will love to live!!</h1>
+                <h1  class="  w-80 mx-auto md:w-[505px] text-3xl md:text-5xl text-center md:text-left font-semibold text-orange-500 md:ml-0">
+                    <span class="text-black">Discover a place you will love to</span>  <span class="auto-typed text-orange-500"></span> </h1>
                 <p class="md:my-10 my-4 text-center md:text-left text-sm w-64 mx-auto md:ml-0 md:w-[500px] md:text-lg text-gray-700">Connect with more than 75K renters looking for new homes using our comprehensive marketing platform.</p>
                 
                 <!-- serch section -->
@@ -95,15 +97,15 @@
                     <div class="flex  gap-3 md:items-center  md:gap-6 justify-center md:justify-start ">
                         <div class=" drd flex border border-darkestBlue rounded-lg selected" >
                             <input type="radio" name="action" id="room" class="rd hidden" checked> 
-                            <label for="room" class="px-4 py-1 cursor-pointer  text-md md:text-lg ">Room</label>
+                            <label for="room" class="px-4 py-1 cursor-pointer  text-sm md:text-md ">Room</label>
                         </div>
                         <div class="drd flex border border-darkestBlue rounded-lg ">
                             <input type="radio" name="action" id="pg" class="rd hidden"> 
-                            <label for="pg" class="px-4 py-1 cursor-pointer text-md md:text-lg ">Pg/co-living</label>
+                            <label for="pg" class="px-4 py-1 cursor-pointer text-sm md:text-md ">Pg/co-living</label>
                         </div>
                         <div class="drd flex border border-darkestBlue rounded-lg ">
                             <input type="radio" name="action" id="flat" class="rd hidden"> 
-                            <label for="flat" class="px-4 py-1 cursor-pointer text-md md:text-lg ">Flat</label>
+                            <label for="flat" class="px-4 py-1 cursor-pointer text-sm md:text-md ">Flat</label>
                         </div>
                         
                     </div>
@@ -136,9 +138,9 @@
 
     
 
-    <section id="stas">
-        <div class="container md:my-20 py-10 ">
-            <div class="grid  grid-cols-3  bg-gray-100 px-2 py-10 md:px-6 rounded-xl   shadow-md relative">
+    <section id="stas" class="bg-gray-100">
+        <div class="container  py-10 ">
+            <div class="grid  grid-cols-3   px-2 py-10 md:px-6 rounded-xl relative">
                 <div class="flex flex-col md:flex-row items-center gap-2 md:space-x-4  ">
 
                     <div class="item-circle ">
@@ -327,5 +329,7 @@
 
         </div>
     </footer>
+    <script src="https://unpkg.com/typed.js@2.0.132/dist/typed.umd.js"></script>
+    <script  src="js/script.js"></script>
 </body>
 </html>
