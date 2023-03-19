@@ -11,8 +11,9 @@
 .back {
   isolation: isolate;
   background-image: url("../assets/hero-2.jpg");
-  background-size: 100%;
+  background-size: cover;
   overflow: hidden;
+  background-repeat: no-repeat;
 }
 .container {
   @apply max-w-6xl mx-auto md:px-8 px-5;
@@ -54,7 +55,7 @@
   }
   .back {
     background-image: url("../assets/hero-2.png");
-    background-size: 105%;
+
     background-position-y: -20px;
   }
   .back::after {
