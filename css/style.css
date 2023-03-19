@@ -642,6 +642,10 @@ video {
   width: 12rem;
 }
 
+.w-5 {
+  width: 1.25rem;
+}
+
 .w-60 {
   width: 15rem;
 }
@@ -938,6 +942,10 @@ video {
   line-height: 2.25rem;
 }
 
+.text-\[0\.8rem\] {
+  font-size: 0.8rem;
+}
+
 .text-lg {
   font-size: 1.125rem;
   line-height: 1.75rem;
@@ -976,11 +984,6 @@ video {
 .text-black {
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
-}
-
-.text-gray-300 {
-  --tw-text-opacity: 1;
-  color: rgb(209 213 219 / var(--tw-text-opacity));
 }
 
 .text-gray-400 {
@@ -1043,12 +1046,8 @@ video {
   background-size: cover;
 }
 
-.back {
-  isolation: isolate;
-  background-image: url("../assets/hero-2.jpg");
-  background-size: cover;
-  overflow: hidden;
-  background-repeat: no-repeat;
+.lp {
+  background-color: rgba(255, 255, 255, 0.406);
 }
 
 .container {
@@ -1132,32 +1131,20 @@ video {
     background-image: url("../assets/hero-desktop.jpg");
     background-position: top;
   }
-
-  .back {
-    background-image: url("../assets/hero-2.png");
-    background-position-y: -20px;
-  }
-
-  .back::after {
-    content: "";
-    position: absolute;
-    inset: 0;
-    z-index: -10;
-    background-image: linear-gradient(
-      180deg,
-      rgba(0, 0, 0, 0),
-      rgba(0, 0, 0, 0.333)
-    );
-  }
 }
 
 .item-circle {
   display: flex;
-  height: 5rem;
-  width: 5rem;
+  height: 4rem;
+  width: 4rem;
   align-items: center;
   justify-content: center;
   border-radius: 9999px;
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
 @media (min-width: 768px) {
@@ -1171,8 +1158,8 @@ video {
 
 .hamburger {
   cursor: pointer;
-  width: 24px;
-  height: 24px;
+  width: 18px;
+  height: 18px;
   transition: all 250ms;
   position: relative;
 }
@@ -1261,6 +1248,10 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.hover\:underline:hover {
+  text-decoration-line: underline;
+}
+
 .focus\:outline-none:focus {
   outline: 2px solid transparent;
   outline-offset: 2px;
@@ -1317,6 +1308,11 @@ video {
 
   .md\:w-\[500px\] {
     width: 500px;
+  }
+
+  .md\:min-w-fit {
+    min-width: -moz-fit-content;
+    min-width: fit-content;
   }
 
   .md\:grid-cols-3 {
