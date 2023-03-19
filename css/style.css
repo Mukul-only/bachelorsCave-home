@@ -905,6 +905,11 @@ video {
   padding-bottom: 1rem;
 }
 
+.py-6 {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
 .py-8 {
   padding-top: 2rem;
   padding-bottom: 2rem;
@@ -967,6 +972,18 @@ video {
   line-height: 1.75rem;
 }
 
+.text-\[0\.5rem\] {
+  font-size: 0.5rem;
+}
+
+.text-\[0\.6rem\] {
+  font-size: 0.6rem;
+}
+
+.text-\[0\.7rem\] {
+  font-size: 0.7rem;
+}
+
 .font-bold {
   font-weight: 700;
 }
@@ -1007,39 +1024,14 @@ video {
   color: rgb(55 65 81 / var(--tw-text-opacity));
 }
 
-.text-white {
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.text-orange-600 {
-  --tw-text-opacity: 1;
-  color: rgb(234 88 12 / var(--tw-text-opacity));
-}
-
 .text-orange-500 {
   --tw-text-opacity: 1;
   color: rgb(249 115 22 / var(--tw-text-opacity));
 }
 
-.text-amber-500 {
+.text-white {
   --tw-text-opacity: 1;
-  color: rgb(245 158 11 / var(--tw-text-opacity));
-}
-
-.text-amber-600 {
-  --tw-text-opacity: 1;
-  color: rgb(217 119 6 / var(--tw-text-opacity));
-}
-
-.text-amber-400 {
-  --tw-text-opacity: 1;
-  color: rgb(251 191 36 / var(--tw-text-opacity));
-}
-
-.text-orange-400 {
-  --tw-text-opacity: 1;
-  color: rgb(251 146 60 / var(--tw-text-opacity));
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .shadow-xl {
@@ -1169,8 +1161,8 @@ a {
 
 .item-circle {
   display: flex;
-  height: 4rem;
-  width: 4rem;
+  height: 3rem;
+  width: 3rem;
   align-items: center;
   justify-content: center;
   border-radius: 9999px;
@@ -1183,8 +1175,8 @@ a {
 
 @media (min-width: 768px) {
   .item-circle {
-    height: 5rem;
-    width: 5rem;
+    height: 4rem;
+    width: 4rem;
   }
 }
 
@@ -1349,10 +1341,6 @@ a {
     width: 500px;
   }
 
-  .md\:w-\[510px\] {
-    width: 510px;
-  }
-
   .md\:w-\[505px\] {
     width: 505px;
   }
@@ -1469,9 +1457,12 @@ a {
     line-height: 1.25rem;
   }
 
-  .md\:text-xl {
-    font-size: 1.25rem;
-    line-height: 1.75rem;
+  .md\:text-\[0\.5rem\] {
+    font-size: 0.5rem;
+  }
+
+  .md\:text-\[0\.2rem\] {
+    font-size: 0.2rem;
   }
 
   .group:hover .md\:group-hover\:scale-110 {
