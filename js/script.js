@@ -13,7 +13,10 @@ let typed = new Typed(".auto-typed", {
 menuBtn.addEventListener("click", () => {
   menuBtn.classList.toggle("open");
   menu.classList.toggle("flex");
-  menu.classList.toggle("hidden");
+  menu.classList.toggle("h-0");
+  menu.classList.toggle("px-6");
+  menu.classList.toggle("py-8");
+
   // document.querySelector('body').classList.toggle('overflow-hidden');
 });
 
