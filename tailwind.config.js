@@ -9,6 +9,9 @@ module.exports = {
       xl: "1440px",
     },
     extend: {
+      spacing: {
+        128: "32rem",
+      },
       colors: {
         darkestBlue: "rgb(0,0,0)",
         lightestBlue: "#caf0f8",
