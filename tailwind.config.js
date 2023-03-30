@@ -9,6 +9,10 @@ module.exports = {
       xl: "1440px",
     },
     extend: {
+      boxShadow: {
+        material:
+          " rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px",
+      },
       spacing: {
         128: "32rem",
       },
